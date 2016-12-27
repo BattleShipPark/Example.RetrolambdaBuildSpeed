@@ -8,4 +8,5 @@ fi
 
 for n in $(seq 1 100); do
 	sed "s/Class_/Class_$n/" "$1" > "${1%.java}$n.java"
+	echo $n
 done
